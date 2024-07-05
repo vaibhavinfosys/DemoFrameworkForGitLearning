@@ -1,0 +1,33 @@
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class Brocken_Link extends Base_Class {
+	@Test
+	public void BrockenLink() {
+		
+		List<WebElement> link = driver.findElements(By.tagName("a"));
+		
+		for(WebElement allLinks:link ) {
+			
+			String links = allLinks.getAttribute("href");
+			
+			System.out.println(links);
+			
+			
+		}
+		
+		System.out.println(link.size());
+		
+	
+		
+	
+		
+		
+	}
+
+}

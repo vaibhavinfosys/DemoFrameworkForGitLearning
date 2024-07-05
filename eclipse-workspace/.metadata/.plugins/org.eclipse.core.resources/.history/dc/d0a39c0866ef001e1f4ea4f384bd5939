@@ -1,0 +1,27 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.Color;
+import org.testng.annotations.Test;
+
+public class validate_the_color extends Base_Class {
+	
+	@Test
+	public void Validate_Color() {
+		
+		WebElement recoverdCount=driver.findElement(By.xpath("(//span[text()='675,392,251'])[1]"));
+		
+		String clr=recoverdCount.getCssValue("color");
+		
+		System.out.println(clr);
+		
+		String color = Color.fromString(clr).asHex();
+		
+	    System.out.println(color);
+	    
+	    
+		
+	}
+
+}

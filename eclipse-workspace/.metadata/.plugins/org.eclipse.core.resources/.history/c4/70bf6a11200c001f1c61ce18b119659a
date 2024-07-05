@@ -1,0 +1,42 @@
+package RestAssured;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class Validate_XML {
+	@Test
+	public void addPet() {
+		
+		String jsonData="{\r\n"
+				+ "  \"id\": 0,\r\n"
+				+ "  \"category\": {\r\n"
+				+ "    \"id\": 0,\r\n"
+				+ "    \"name\": \"string\"\r\n"
+				+ "  },\r\n"
+				+ "  \"name\": \"doggie\",\r\n"
+				+ "  \"photoUrls\": [\r\n"
+				+ "    \"string\"\r\n"
+				+ "  ],\r\n"
+				+ "  \"tags\": [\r\n"
+				+ "    {\r\n"
+				+ "      \"id\": 0,\r\n"
+				+ "      \"name\": \"string\"\r\n"
+				+ "    }\r\n"
+				+ "  ],\r\n"
+				+ "  \"status\": \"available\"\r\n"
+				+ "}";
+		
+		RequestSpecification reqSpec = RestAssured.given();
+		
+		reqSpec.baseUri("https://petstore.swagger.io/");
+		
+		reqSpec.basePath("/v2/pet");
+		
+		
+		
+		
+	}
+
+}

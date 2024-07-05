@@ -1,0 +1,36 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class Map {
+	
+	public static void main(String[] args) {
+		
+		 List<String > al=new ArrayList<String>();
+	     
+	     al.add("Pune");
+	     
+	     al.add("Ahmadabad");
+	     
+	     al.add("Banglore");
+		
+		
+     java.util.Map<String, Boolean> map=new HashMap<String, Boolean>();
+     
+     map.put("India", al.addAll(al));
+     
+     
+     
+    
+     
+     
+     
+     
+		
+		
+		
+	}
+
+}

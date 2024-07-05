@@ -1,0 +1,18 @@
+package selenium;
+
+public class File_Upload extends Base_Class{
+	
+	public static void main(String[] args) {
+		
+		
+		//input[@id='input-4']
+		
+	
+		
+		
+		
+		
+		
+	}
+
+}

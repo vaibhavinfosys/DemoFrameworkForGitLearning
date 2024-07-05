@@ -1,0 +1,23 @@
+package RestAssured;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class Validate_XML {
+	@Test
+	public void addPet() {
+		
+		RequestSpecification reqSpec = RestAssured.given();
+		
+		reqSpec.baseUri("https://petstore.swagger.io/");
+		
+		reqSpec.basePath("/v2/pet");
+		
+		
+		
+		
+	}
+
+}

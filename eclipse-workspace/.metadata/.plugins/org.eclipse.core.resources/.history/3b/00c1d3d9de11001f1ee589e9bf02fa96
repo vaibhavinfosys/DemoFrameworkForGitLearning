@@ -1,0 +1,62 @@
+package Java;
+
+public class testst {
+	
+	public static void main(String[] args) {
+	
+		
+		String name="jay santosh chormale";
+		
+		String newName=name.replace(" ", "");
+		
+		String reverseString="";
+		
+		int count=newName.length();
+		
+		System.out.println(count);
+		
+		String [] word=name.split(" ");
+		
+		System.out.println(word.length);
+		
+		for(int i=word.length-1;i>=0;i--) {
+			
+			String words=word[i];
+			
+		
+			
+			System.out.print(words + " ");
+		}
+		
+		for(int i=0;i<=word.length-1;i++) {
+			
+			String straighWords=word[i];
+			
+			String reversewords="";
+			
+			for(int j=straighWords.length()-1;i>0;i--) {
+				
+				reversewords=reversewords+straighWords.charAt(j);
+				
+			}
+			
+			reverseString=reverseString+reversewords+" ";
+			
+	}
+		
+		
+		
+		
+		
+		
+		
+	System.out.println(reverseString);
+		
+		
+		
+		
+		
+		
+	}
+
+}

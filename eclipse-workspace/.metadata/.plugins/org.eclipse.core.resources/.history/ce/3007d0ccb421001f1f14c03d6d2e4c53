@@ -1,0 +1,24 @@
+package Runner;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+public class Multiple_FeatureFile {
+	
+	@RunWith(Cucumber.class)
+	
+	@CucumberOptions(
+			
+			feature= {"C:\\Users\\Dell\\eclipse-workspace\\Health_Insurance\\src\\main\\resources"},
+			
+			glue=""
+			
+			
+			
+			)
+	
+	
+
+}

@@ -1,0 +1,24 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class List extends Base_Class {
+	
+	@Test
+	public void getText() {
+		
+		
+		 java.util.List<WebElement> list = driver.findElements(By.xpath("(//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-dashboard-widget']/descendant::ul)[2]/li"));
+		
+		 for(WebElement element:list) {
+			 
+			String  text=element.getText();
+			 
+			 System.out.println(text);
+		 }
+		 
+	}
+
+}

@@ -1,0 +1,30 @@
+package Java;
+
+public class Logical_Code {
+	
+	public static void main(String[] args) {
+		
+		Logical_Code code=new Logical_Code();
+		
+		code.analyzee();
+	}
+	
+	
+		public void analyzee() {
+		
+		 boolean isData = true;
+		 
+		 for(;;) {
+			 
+			 if(isData==true) {
+				 
+				 return;
+			 }
+		 }
+		 
+		 
+		 
+		 
+		}
+
+}

@@ -1,0 +1,16 @@
+package selenium;
+
+import org.testng.annotations.Test;
+
+public class Brocken_Link extends Base_Class {
+	@Test
+	public void BrockenLink() {
+		
+	
+		
+	
+		
+		
+	}
+
+}

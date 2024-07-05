@@ -1,0 +1,5 @@
+package selenium;
+
+public class Fetching_Data_From_properties_File {
+
+}

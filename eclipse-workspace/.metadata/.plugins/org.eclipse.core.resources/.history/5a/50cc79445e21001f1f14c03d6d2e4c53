@@ -1,0 +1,18 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class File_Upload extends Base_Class{
+	
+	@Test
+	public void uploadFile() {
+		
+		
+		WebElement element=driver.findElement(By.xpath("//input[@id='input-4']"));
+		
+		element.sendKeys("Desktop\\IMP Quetions.txt");
+	}
+
+}

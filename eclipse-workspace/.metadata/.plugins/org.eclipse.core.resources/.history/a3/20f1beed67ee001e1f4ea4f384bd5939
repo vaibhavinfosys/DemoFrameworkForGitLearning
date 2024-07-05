@@ -1,0 +1,12 @@
+package selenium;
+
+public class Colour_Validate  extends Base_Class{
+	
+   public void ColourValidate() {
+	
+	   
+	   
+	   
+}
+
+}

@@ -1,0 +1,23 @@
+package Java;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class mrunal {
+	
+	public static void main(String[] args) {
+		
+		String [] array={"january","march","Octomber","Dec"};
+		
+		List<String> list = Arrays.asList(array);
+		
+		Collections.reverseOrder();
+		
+		System.out.println(list);
+		
+		
+		
+	}
+
+}

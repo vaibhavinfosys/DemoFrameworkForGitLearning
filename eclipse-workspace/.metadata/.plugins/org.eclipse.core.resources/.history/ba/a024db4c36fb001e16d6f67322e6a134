@@ -1,0 +1,30 @@
+package RestAssured;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class Get {
+	@Test
+	public void GetRequest() {
+		
+		
+		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
+		
+		System.out.println(response.statusCode());
+		
+		System.out.println(response.statusLine());
+		
+		System.out.println(response.getStatusCode());
+		
+		System.out.println(response.getStatusLine());
+		
+		
+		
+		
+		
+	}
+
+}

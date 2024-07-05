@@ -1,0 +1,43 @@
+package Java;
+
+import java.util.Arrays;
+
+public class reverse_Array {
+
+	
+	public static void main(String[] args) {
+		
+		
+		
+		int [] array1= {1,2,3,4,5};
+		
+		int l1=array1.length;
+		
+		int [] array2= {6,7,8,9,10};
+		
+		int l2=array2.length;
+		
+		int L=l1+l2;
+		
+		
+		
+		
+		int [] newArray=new int[L];
+		
+		for(int  i:array1) {
+			
+			newArray[i]=array1[i];
+			
+		}
+		
+		for(int i:array2) {
+			
+			newArray[i+l2]=array2[i];
+		}
+		
+		String array = Arrays.toString(newArray);
+		
+		System.out.println(array);
+		
+	}
+}
